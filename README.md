@@ -237,3 +237,5 @@ The changes related to analysis of dataset were not major and could be potential
 Furthermore, I did not go much beyond the regular LeNet-5 architecture, this could also be subject of potential future work.
 
 Those directions for improvement were not explored due to project deadline, normally I would consider this model as first cut and continue experiments far beyond it based on analysis of dataset and experimenting with other state of the art architecture as well as testing new architectures.
+
+From a technical perspective, it was interesting to see the boost in calculation that can be achieved when using a discreet GPU. My first experiments with 10-20 epochs were done on regular laptop with CPU only. However, when moving to 60 or 120 epochs, increasing input size and network architecture complexity, made iterative experiments become not feasible. Moving to even an old laptop with GTX 1050 sped up each epoch calculation by about 10x, making the entire process a lot easier!
