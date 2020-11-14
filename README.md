@@ -227,3 +227,13 @@ The top 5 picks and respectiev probabilities can be seen below. Model quite conf
 ![alt text][image_8]
 **Predictions for new test signs - top 5 per each sign**
 
+
+#### Final Notes
+
+Overall the bulk time spent in this project was on small iterative changes. Most of the changes were based on knowledge of deep learning networks and typical directions for improvement suggestion during the course.
+
+The changes related to analysis of dataset were not major and could be potential subject of future work (e.g. class balancing or using more challenging images for testing).
+
+Furthermore, I did not go much beyond the regular LeNet-5 architecture, this could also be subject of potential future work.
+
+Those directions for improvement were not explored due to project deadline, normally I would consider this model as first cut and continue experiments far beyond it based on analysis of dataset and experimenting with other state of the art architecture as well as testing new architectures.
