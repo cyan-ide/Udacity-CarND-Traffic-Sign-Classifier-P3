@@ -199,7 +199,7 @@ Picking the right data augmentation turned to be quite key as well as selecting 
 
 #### 1. Choose five German traffic signs found on the web and provide them in the report. For each image, discuss what quality or qualities might be difficult to classify.
 
-Here are five German traffic signs that I found on the web (taken from https://github.com/Goddard/udacity-traffic-sign-classifier , to compare my work against other students):
+Here are five German traffic signs that I found on the web (taken from https://www.rhinocarhire.com/Drive-Smart-Blog/Drive-Smart-Germany/Germany-Road-Signs.aspx):
 
 ![alt text][image_7]
 **New test signs downloaded from the web**
@@ -211,11 +211,10 @@ Here are the results of the prediction:
 | Image			        	|     Prediction	        					| 
 |:-------------------------:|:---------------------------------------------:| 
 | Speed limit (30km/h)  	| Speed limit (30km/h)							| 
-| Bumpy road     			| Bumpy road 									|
-| Ahead only				| Ahead only									|
-| No vehicles	      		| No vehicles					 				|
-| Go streight or left		| Go streight or left      						|
-| General caution			| General caution      							|
+| Wild animals crossing     | Wild animals crossing 						|
+| Keep right				| Keep right									|
+| Turn left ahead	      	| Turn left ahead				 				|
+| Stop						| Stop      									|
 
 
 The model was able to correctly guess all traffic signs, which gives an accuracy of 100%. Worth nothing however, there were no limitataion against the downlaoded traffic signs to the used images seem quite streightforward to classify. Potential future work could be to test with more challenging cases.
@@ -224,9 +223,48 @@ The model was able to correctly guess all traffic signs, which gives an accuracy
 
 The top 5 picks and respectiev probabilities can be seen below. Model quite confidently (and accuractly) classified all test cases.
 
-![alt text][image_8]
-**Predictions for new test signs - top 5 per each sign**
-
+```
+----------------------------------------------
+Original label: Speed limit (60km/h)
+----------------------------------------------
+Prediction #1 'Speed limit (60km/h)' (1.0)
+Prediction #2 'Speed limit (80km/h)' (1.4333262495728333e-13)
+Prediction #3 'Speed limit (50km/h)' (4.185717864486552e-16)
+Prediction #4 'Yield' (1.3042525071990115e-20)
+Prediction #5 'No passing for vehicles over 3.5 metric tons' (2.807825815220039e-21)
+----------------------------------------------
+Original label: Wild animals crossing
+----------------------------------------------
+Prediction #1 'Wild animals crossing' (1.0)
+Prediction #2 'Double curve' (8.386529872636788e-19)
+Prediction #3 'Slippery road' (4.821752353940853e-26)
+Prediction #4 'No passing for vehicles over 3.5 metric tons' (1.2011530339888726e-28)
+Prediction #5 'General caution' (9.57877744883946e-34)
+----------------------------------------------
+Original label: Keep right
+----------------------------------------------
+Prediction #1 'Keep right' (1.0)
+Prediction #2 'Priority road' (5.897629131239338e-32)
+Prediction #3 'Wild animals crossing' (4.560176940037888e-36)
+Prediction #4 'Yield' (1.7531814364022277e-37)
+Prediction #5 'Speed limit (20km/h)' (0.0)
+----------------------------------------------
+Original label: Turn left ahead
+----------------------------------------------
+Prediction #1 'Turn left ahead' (1.0)
+Prediction #2 'Stop' (8.704719500163e-20)
+Prediction #3 'No entry' (1.890074782095815e-21)
+Prediction #4 'Yield' (3.292007434263564e-23)
+Prediction #5 'Speed limit (20km/h)' (1.5117455864060453e-23)
+----------------------------------------------
+Original label: Stop
+----------------------------------------------
+Prediction #1 'Stop' (1.0)
+Prediction #2 'Traffic signals' (8.734721390624145e-09)
+Prediction #3 'No vehicles' (1.3071473591030891e-11)
+Prediction #4 'Speed limit (70km/h)' (9.91615440476025e-14)
+Prediction #5 'Speed limit (20km/h)' (1.8246800690411083e-14)
+``` 
 
 #### Final Notes
 
